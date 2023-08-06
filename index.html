@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Logo_JE.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section id="inicio" class="inicio">
+        <div class="contenido">
+            <header>
+                <div class="logo">
+                    <img src="./img/Logo_JE.png" alt="logo Jean Escobar">
+                </div>
+                <nav id="nav">
+                    <a href="#inicio"><span>#</span>inicio</a>
+                    <a href="#trabajos"><span>#</span>proyectos</a>
+                    <a href="#trabajos"><span>#</span>sobre-mi</a>
+                    <a href="#contacto"><span>#</span>contacto</a>
+                </nav>
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="social_container">
+                    <span></span>
+                    <a href="https://github.com/jeanfes" target="_blank">
+                        <img src="./img/Github.png" alt="mi perfil de github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jeanescobar7/" target="_blank">
+                        <img src="./img/Linkedin.png" alt="mi perfil de linkedin">
+                    </a>
+                </div>
+            </header>
+            <div class="fila">
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col">
+                    <h2>Hola, soy Jean Escobar</h2>
+                    <span>frontend developer</span>
+                    <p>Apasionado por crear aplicaciones web dinámicas y atractivas. En busca de desafíos y siempre
+                        aprendiendo. ¡Bienvenido a mi portafolio
+                        web!</p>
+                </div>
+                <div class="col">
+                    <div data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                        class="contenedor-img">
+                        <img src="img/Image.png" alt="">
+                    </div>
+                    <svg data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500"
+                        id="geometry" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 53 53"
+                        fill="none">
+                        <mask id="path-1-inside-1_64_1296" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 14H13H26V27H13V40H26V53H13H0V40V27V14Z" />
+                        </mask>
+                        <path
+                            d="M0 14V13H-1V14H0ZM26 14H27V13H26V14ZM26 27V28H27V27H26ZM13 27V26H12V27H13ZM13 40H12V41H13V40ZM26 40H27V39H26V40ZM26 53V54H27V53H26ZM0 53H-1V54H0V53ZM13 13H0V15H13V13ZM26 13H13V15H26V13ZM27 27V14H25V27H27ZM13 28H26V26H13V28ZM14 40V27H12V40H14ZM13 41H26V39H13V41ZM25 40V53H27V40H25ZM26 52H13V54H26V52ZM0 54H13V52H0V54ZM-1 40V53H1V40H-1ZM-1 27V40H1V27H-1ZM-1 14V27H1V14H-1Z"
+                            fill="#FF5858" mask="url(#path-1-inside-1_64_1296)" />
+                        <mask id="path-3-outside-2_64_1296" maskUnits="userSpaceOnUse" x="25" y="0" width="28"
+                            height="41" fill="black">
+                            <rect fill="white" x="25" width="28" height="41" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M26 1H39H52V14V27V40H39H26V27H39V14H26V1Z" />
+                        </mask>
+                        <path
+                            d="M26 1V0H25V1H26ZM52 1H53V0H52V1ZM52 40V41H53V40H52ZM26 40H25V41H26V40ZM26 27V26H25V27H26ZM39 27V28H40V27H39ZM39 14H40V13H39V14ZM26 14H25V15H26V14ZM39 0H26V2H39V0ZM52 0H39V2H52V0ZM53 14V1H51V14H53ZM53 27V14H51V27H53ZM53 40V27H51V40H53ZM39 41H52V39H39V41ZM39 39H26V41H39V39ZM27 40V27H25V40H27ZM26 28H39V26H26V28ZM38 14V27H40V14H38ZM26 15H39V13H26V15ZM25 1V14H27V1H25Z"
+                            fill="#FF5858" mask="url(#path-3-outside-2_64_1296)" />
+                    </svg>
+                    <svg data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="dots"
+                        width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="proyectos" id="proyectos">
+        <div class="titulo_proyectos">
+            <div>
+                <span>#</span>
+                <p>proyectos</p>
+                <b></b>
+            </div>
+            <div>
+                <a href=""><img src="./img/View all ~~_.png" alt=""></a>
+            </div>
+        </div>
+        <div class="galeria">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"
+                class="contenedor_proyecto">
+                <img src="./img/tutorly.png" alt="fondo de tutorly">
+                <p>React Html Css JavaScript</p>
+                <div class="nombre_proyecto">
+                    <h3>Tutorly</h3>
+                    <p>Tutorias personalizadas</p>
+                    <a class="animated-button" href="https://tutorly-jeanfes.vercel.app/" target="_blank">
+                        <span>Ver</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+                class="contenedor_proyecto">
+                <img src="./img/dermai.png" alt="fondo de dermai">
+                <p>React Html Css JavaScript Node Mysql</p>
+                <div class="nombre_proyecto">
+                    <h3>Dermai</h3>
+                    <p>Atencion dermtalogica</p>
+                    <a class="animated-button" href="https://derm-ai-jeanfes.vercel.app/" target="_blank">
+                        <span>Ver</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2500" data-aos-anchor-placement="top-bottom"
+                class="contenedor_proyecto">
+                <img src="./img/athome.png" alt="fondo de athome">
+                <p>React Html Css JavaScript</p>
+                <div class="nombre_proyecto">
+                    <h3>Athome</h3>
+                    <p>Venta de inmuebles</p>
+                    <a class="animated-button" href="https://jeanfes-athome.vercel.app/" target="_blank">
+                        <span>Ver</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div>
+            <span>#</span>
+            <p>skills</p>
+            <b></b>
+        </div>
+        <div>
+            <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="500"
+                class="contenedor_figuras">
+                <svg id="dots-2" width="84" height="84" viewBox="0 0 84 84" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                </svg>
+                <svg id="geometry-2" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 53 53"
+                    fill="none">
+                    <mask id="path-1-inside-1_64_1296" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14H13H26V27H13V40H26V53H13H0V40V27V14Z" />
+                    </mask>
+                    <path
+                        d="M0 14V13H-1V14H0ZM26 14H27V13H26V14ZM26 27V28H27V27H26ZM13 27V26H12V27H13ZM13 40H12V41H13V40ZM26 40H27V39H26V40ZM26 53V54H27V53H26ZM0 53H-1V54H0V53ZM13 13H0V15H13V13ZM26 13H13V15H26V13ZM27 27V14H25V27H27ZM13 28H26V26H13V28ZM14 40V27H12V40H14ZM13 41H26V39H13V41ZM25 40V53H27V40H25ZM26 52H13V54H26V52ZM0 54H13V52H0V54ZM-1 40V53H1V40H-1ZM-1 27V40H1V27H-1ZM-1 14V27H1V14H-1Z"
+                        fill="#FF5858" mask="url(#path-1-inside-1_64_1296)" />
+                    <mask id="path-3-outside-2_64_1296" maskUnits="userSpaceOnUse" x="25" y="0" width="28" height="41"
+                        fill="black">
+                        <rect fill="white" x="25" width="28" height="41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 1H39H52V14V27V40H39H26V27H39V14H26V1Z" />
+                    </mask>
+                    <path
+                        d="M26 1V0H25V1H26ZM52 1H53V0H52V1ZM52 40V41H53V40H52ZM26 40H25V41H26V40ZM26 27V26H25V27H26ZM39 27V28H40V27H39ZM39 14H40V13H39V14ZM26 14H25V15H26V14ZM39 0H26V2H39V0ZM52 0H39V2H52V0ZM53 14V1H51V14H53ZM53 27V14H51V27H53ZM53 40V27H51V40H53ZM39 41H52V39H39V41ZM39 39H26V41H39V39ZM27 40V27H25V40H27ZM26 28H39V26H26V28ZM38 14V27H40V14H38ZM26 15H39V13H26V15ZM25 1V14H27V1H25Z"
+                        fill="#FF5858" mask="url(#path-3-outside-2_64_1296)" />
+                </svg>
+                <svg id="dots-2" width="84" height="84" viewBox="0 0 84 84" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                    <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                    <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                </svg>
+            </div>
+            <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="500"
+                class="skills_container">
+                <article>
+                    <p>Lenguajes</p>
+                    <p>JavaScript Java Python</p>
+                </article>
+                <article>
+                    <p>Bases de datos</p>
+                    <p>Mysql Oracle Database</p>
+                </article>
+                <article>
+                    <p>Herramientas</p>
+                    <p>VsCode Figma Git Github</p>
+                </article>
+                <article>
+                    <p>Otros</p>
+                    <p>Html Css Node Vite</p>
+                </article>
+                <article>
+                    <p>Frameworks</p>
+                    <p>Next React Angular</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="sobre-mi">
+        <div id="title-sobre-mi">
+            <span>#</span>
+            <p>sobre-mi</p>
+            <b></b>
+        </div>
+        <div>
+            <div id="text-sobre-mi_container" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <p id="text-sobre-mi">¡Hola!
+                    <br><br>
+                    Soy un desarrollador front-end autodidacta  de Barranquilla, Colombia. Puedo desarrollar sitios web responsivos desde cero y convertirlos en experiencias web modernas y fáciles de usar. 
+                    <br><br>
+                    Además, soy ingeniero de sistemas y estudio en la Universidad Simón Bolívar en Barranquilla. 
+                    <br><br>
+                    Combinar mis habilidades en desarrollo web con mi formación académica en ingeniería de sistemas me permite tener una perspectiva única en el mundo de la tecnología y abordar proyectos desde diferentes enfoques.</p>
+                    <button id="btn">Leer mas!</button>
+            </div>
+            <div id="container_img2">
+                <svg data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="dots-3"
+                        width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                    </svg>
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+                    class="contenedor-img">
+                    <img src="img/imagen2.png" alt="">
+                </div>
+                <svg data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id="dots-4"
+                        width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                    </svg>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div>
+            <span>#</span>
+            <p>contacto</p>
+            <b></b>
+        </div>
+        <div id="text_contact">
+            <p data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+                Busco oportunidades laborales en equipos colaborativos. ¡Contáctame para discutir cómo puedo
+                contribuir a tu proyecto! Si tiene alguna solicitud, no dude en ponerse en contacto conmigo.
+            </p>
+            <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="500"
+                id="email_container">
+                <p>Escribeme aqui</p>
+                <article>
+                    <img src="./img/Email.png" alt="">
+                    <p>jeanescobar10@hotmail.com</p>
+                </article>
+                <article>
+                    <img src="./img/Telegram.png" alt="">
+                    <p>+57-3053545551</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section>
+            <div>
+                <article class="logo_footer_container">
+                    <img src="./img/Logo_JE.png" alt="">
+                    <p>Jean</p>
+                </article>
+                <p>Desarrollador web - Frontend</p>
+            </div>
+            <div class="media_container">
+                <h5>Media</h5>
+                <a href="https://discord.gg/cxKRNrsx" target="_blank"><img src="./img/Discord.png" alt=""></a>
+                <a href="https://www.figma.com/files/user/1075955596408129265?fuid=1075955596408129265"
+                    target="_blank"><img src="./img/Figma.png" alt=""></a>
+                <a href="https://twitter.com/JEANFES10" target="_blank"><img src="./img/Twitter.png" alt=""></a>
+            </div>
+        </section>
+        <p>© Copyright 2023. Made by jeanfes</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
