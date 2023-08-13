@@ -2,6 +2,14 @@
     display: flex;
 }
 
+#main_text_title span{
+    color: #FF5858;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 #about-me_title {
     color: #FFF;
     font-size: 1.8rem;
@@ -181,5 +189,11 @@
     }
     #container_img2{
         display: none;
+    }
+}
+
+@media (max-width:350px) {
+    html {
+        font-size: 78.5%;
     }
 }
