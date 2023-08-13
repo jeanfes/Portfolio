@@ -953,7 +953,7 @@ footer section article {
         align-items: center;
     }
 
-    #btn {
+    #text-sobre-mi_container a {
         align-self: flex-start;
     }
 
