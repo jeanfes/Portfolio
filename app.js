@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         htmlElement.classList.remove("lock-scroll");
     }
 });
+
+
+
+

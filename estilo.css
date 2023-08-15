@@ -11,9 +11,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.cambiar-color {
+    color: transparent;
+}
+
+.social_container a:hover .cambiar-color{
+    fill: #ff5858;
+}
+
 body {
     /* Habilitar el scroll vertical y horizontal */
-    overflow: auto;
+    overflow-x: hidden;
 
     /* Personalizar el ancho de la barra de scroll en Firefox */
     scrollbar-width: thin;
@@ -50,7 +58,7 @@ body {
 }
 
 .logo img {
-    width: 25px;
+    width: 26px;
     filter: invert(100%);
 }
 
@@ -140,8 +148,24 @@ body {
     margin-right: 20px;
 }
 
-#inicio header nav a:hover {
-    border-bottom: 2px solid #ff5858;
+#nav a {
+    position: relative;
+    text-decoration: none;
+}
+
+#nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #ff5858;
+    transition: width 0.3s;
+}
+
+#nav a:hover::before {
+    width: 100%;
 }
 
 .inicio .redes a {
@@ -363,14 +387,17 @@ body {
     text-align: center;
 }
 
-
-
 #btn {
+    width: fit-content;
     background-color: transparent;
     border: 1px solid #ff5858;
     padding: 0.5rem 1rem;
     color: white;
     cursor: pointer;
+}
+
+#btn:hover{
+    transform: scale(1.1);
 }
 
 .col {
@@ -413,7 +440,7 @@ body {
     border-bottom: 1px solid #ABB2BF;
 }
 
-.contenedor_proyecto > p {
+.contenedor_proyecto>p {
     color: var(--gray, #ABB2BF);
     padding: 4px 8px;
     font-size: 1rem;
@@ -631,28 +658,30 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-#text_contact>p {
+#text_contact > p {
     width: 50%;
     color: var(--gray, #ABB2BF);
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.625rem;
     margin-top: 20px;
 }
 
 #email_container {
     width: auto;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--gray, #ABB2BF);
-    padding: 20px 15px;
+    padding: 18px 15px;
     margin-top: 20px;
 }
 
-#email_container > p {
+#email_container>p {
     color: var(--white, #FFF);
     font-size: 1rem;
     font-style: normal;
@@ -678,7 +707,6 @@ a {
 
 footer {
     border-top: 1px solid #ABB2BF;
-    padding: 40px 30px 0px;
     margin-bottom: 20px;
 }
 
@@ -693,6 +721,7 @@ footer p {
 
 footer section {
     max-width: 1150px;
+    padding: 60px 30px 0px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -789,10 +818,6 @@ footer section article {
     gap: 32px;
 }
 
-#text-sobre-mi_container button:hover {
-    transform: scale(1.1);
-}
-
 #container_img2 {
     position: relative;
 }
@@ -823,19 +848,19 @@ footer section article {
     display: none;
 }
 
-.header_menu-mobile{
+.header_menu-mobile {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header_menu-mobile img{
-    width: 25px;
+.header_menu-mobile img {
+    width: 26px;
     filter: invert(100%);
 }
 
-#nav_mobile{
+#nav_mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -864,21 +889,21 @@ footer section article {
     line-height: normal;
 }
 
-.social_container_mobile{
+.social_container_mobile {
     display: flex;
     flex-direction: row;
     justify-content: center;
     column-gap: 15px;
 }
 
-.social_container_mobile a{
+.social_container_mobile a {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .lock-scroll {
-  overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 #menu_mobile {
@@ -901,7 +926,7 @@ footer section article {
     right: 0;
     /* Muestra el menú desplazándolo desde la derecha */
 }
-  
+
 
 @media (max-width:1300px) {
     .social_container {
@@ -923,27 +948,23 @@ footer section article {
         flex-wrap: wrap;
         gap: 20px;
     }
-}
 
-@media (max-width:700px) {
-    html {
-        font-size: 90%;
+    #text_contact > p {
+        display: none;
     }
 
     #text_contact {
         display: flex;
         flex-direction: column;
     }
+}
 
-    #text_contact>p {
-        display: none;
+@media (max-width:700px) {
+    html {
+        font-size: 90%;
     }
-
     .contact {
         margin-bottom: 80px;
-    }
-    .contenedor_proyecto img {
-        height: 14rem;
     }
 }
 
@@ -1044,7 +1065,21 @@ footer section article {
     .media_container h5 {
         text-align: center;
     }
-    #img_viewall {
-        width: 111%;
+
+}
+
+@media (max-width:350px) {
+    #email_container {
+        width: 100%;
     }
+    #email_container article p {
+        font-size: 0.87rem;
+    }
+    #email_container article {
+        overflow: scroll;
+    }
+}
+
+#img_viewall {
+    width: 100%;
 }
