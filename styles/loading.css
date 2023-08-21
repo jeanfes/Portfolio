@@ -28,7 +28,7 @@
 	stroke-dasharray:1940;
 	-webkit-animation: draw 10s ease-in-out infinite;
     -moz-animation: draw 10s ease-in-out infinite;
-    animation: draw 3s ease-in-out infinite;
+    animation: draw 3.1s ease-in-out infinite;
 	fill-opacity: 0;
 }
 
