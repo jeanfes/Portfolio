@@ -400,6 +400,10 @@ body {
     transform: scale(1.1);
 }
 
+#btn:active{
+    transform: scale(1);
+}
+
 .col {
     position: relative;
 }

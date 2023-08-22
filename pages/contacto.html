@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../estilo.css">
     <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/toast.css">
     <title>Contacto</title>
 </head>
 
@@ -146,15 +147,17 @@
                     <p id="contacto_title">enviar-correo</p>
                 </div>
             </div>
-            <div class="send_message_container">
+            <form action="https://formsubmit.co/jeanescobar10@hotmail.com" method="POST" id="contact-form" class="send_message_container">
                 <div id="container-1">
-                    <input type="text" placeholder="Nombre" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="200">
-                    <input type="text" placeholder="Email" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="300">
+                    <input type="text" name="name" placeholder="Nombre" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="200">
+                    <input type="text" name="email" placeholder="Email" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="300">
                 </div>
-                <input type="text" placeholder="Titulo" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="400">
-                <textarea name="" id="input_message" cols="30" rows="10" placeholder="Mensaje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500"></textarea>
-                <button id="btn" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">Enviar</button>
-            </div>
+                <input type="text" name="titulo" placeholder="Asunto" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="400">
+                <textarea name="message" id="input_message" cols="30" rows="10" placeholder="Mensaje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://jeanfes.github.io/Portfolio/pages/contacto.html">
+                <button type="submit" id="btn" class="btn_toast" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">Enviar</button>
+            </form>
         </div>
     </section>
     <footer>
@@ -175,6 +178,8 @@
         </section>
         <p>© Copyright 2023. Made by jeanfes</p>
     </footer>
+    <div class="contenedor-toast" id="contenedor-toast">
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
