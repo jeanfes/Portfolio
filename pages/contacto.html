@@ -149,11 +149,11 @@
             </div>
             <form action="https://formsubmit.co/jeanescobar10@hotmail.com" method="POST" id="contact-form" class="send_message_container">
                 <div id="container-1">
-                    <input type="text" name="name" placeholder="Nombre" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="200">
-                    <input type="text" name="email" placeholder="Email" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="300">
+                    <input type="text" name="name" placeholder="Nombre" autocomplete="name" required data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="200">
+                    <input type="text" name="email" placeholder="Email" autocomplete="email" required data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="300">
                 </div>
-                <input type="text" name="titulo" placeholder="Asunto" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="400">
-                <textarea name="message" id="input_message" cols="30" rows="10" placeholder="Mensaje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500"></textarea>
+                <input type="text" name="titulo" placeholder="Asunto" required data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="400">
+                <textarea name="message" id="input_message" required cols="30" rows="10" placeholder="Mensaje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500"></textarea>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://jeanfes.github.io/Portfolio/pages/contacto.html">
                 <button type="submit" id="btn" class="btn_toast" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">Enviar</button>
