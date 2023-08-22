@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         agregarToast({ tipo: 'email', titulo: 'Mensaje', descripcion: 'Su email ha sido enviado exitosamente', autoCierre: true });
         setTimeout(function () {
             formulario.submit(); // Enviar el formulario después de mostrar el toast
-        }, 5000);
+        }, 3000);
     });
 
     const cerrarToast = (id) => {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         if (autoCierre) {
-            setTimeout(() => cerrarToast(toastId), 5000);
+            setTimeout(() => cerrarToast(toastId), 3000);
         }
 
         nuevoToast.addEventListener('animationend', handleAnimacionCierre);
