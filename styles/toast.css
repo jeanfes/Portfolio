@@ -87,7 +87,7 @@
 	position: absolute;
 	bottom: 0;
 	animation-name: autoCierre;
-	animation-duration: 2s;
+	animation-duration: 3s;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
 }
