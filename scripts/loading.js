@@ -1,8 +1,7 @@
+htmlElement.classList.add("lock-scroll");
 window.onload = function() {
     const loading = document.getElementById("loading");
-  
     if (loading) {
-      htmlElement.classList.add("lock-scroll");
       loading.style.display = "block"; // Mostrar el loading
       setTimeout(function() {
         htmlElement.classList.remove("lock-scroll");
