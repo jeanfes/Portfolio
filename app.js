@@ -3,6 +3,15 @@ const menuMobile = document.getElementById("menu_mobile");
 const iconCloseMenu = document.getElementById("close_menu");
 const htmlElement = document.querySelector("html");
 
+// Actualizar el año automáticamente
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYearElement = document.getElementById("current-year");
+    if (currentYearElement) {
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     iconMenu.addEventListener("click", openMenu);
     iconCloseMenu.addEventListener("click", closeMenu);
